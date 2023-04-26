@@ -88,30 +88,30 @@ ticket lists, and returns to us th head of the updated ticket list.
 
 preconditions: assignedtix and new are valid pointers, can be null
 postconditions: the assignedtix head that is returned mus be valid*/
-ticket_t *assigntix(ticket_t *new, ticket_t *assignedtix){
+ticket_t *assigntix(ticket_t *newtix, ticket_t *assignedtix){
     printf("\t---\nYou have entered the the assign ticket function\n");
 
-    if (new == NULL){
+    if (newtix == NULL){
         // if the new list is empty
         printf("There are no new tickets. You have to make a new node\n");
         return assignedtix;
     }else{
         // new list is not empty
-        strcpy((*new).status, "assigned");
+        strcpy((*newtix).status, "assigned");
         printf("Technician Name: ");
-        scanf("%s",new->technicianname);
+        scanf("%s",newtix->technicianname);
     }
 
     if (assignedtix == NULL){
         // assigned tickets is empty
-        assignedtix = new;
+        assignedtix = newtix;
     }else{
         // assigned tickets is not empty
         ticket_t *curr = assignedtix;
         while ((*curr).next != NULL){
             assignedtix = (*curr).next;
         }
-        (*curr).next = new;
+        (*curr).next = newtix;
     }
     return assignedtix;
 }

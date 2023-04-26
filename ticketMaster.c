@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "ticket2.c"
+#include "ticketProc.h"
 
 int main(void){
     ticket_t *newList = NULL;

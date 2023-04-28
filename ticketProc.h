@@ -1,3 +1,25 @@
+    /***********************************************************************
+     * Declan Murray and John Miller                                       *
+     * Assignment name (Project  4 ticketmaster)                           *
+     *                                                                     *
+     * Assignment for <4/28/2022>                                          *
+     ***********************************************************************/
+
+    /* *********************************************************************
+     * Academic honesty certification:                                     *
+     *   Written/online sources used: none                                 *
+     *      textbook(s)                                                    *
+     *      CSC 161 labs and readings;                                     *
+     *                                                                     *
+     *   Help obtained                                                     *
+     *     None                                                            *
+     *   Our signature(s) below confirms that the above list of sources *
+     *   is complete AND that I/we have not talked to anyone else          *
+     *   (e.g., CSC 161 students) about the solution to this problem       *
+     *                                                                     *
+     *   Signature:John Miller and Declan Murray                           *
+     ***********************************************************************/
+
 
 // interface for a ticket list data type based on a list ticket_t type
 
@@ -35,6 +57,5 @@ int printchoicemenu(void);
 preconditions: none
 postconditiions: none*/
 void printList(ticket_t *list);
-
 
 #endif

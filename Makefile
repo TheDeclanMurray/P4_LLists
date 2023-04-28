@@ -1,7 +1,6 @@
 # File:          Makefile
-# Author:        Henry M. Walker
-# Created:       20 April 2008
-# Simplified:    18 November 2011
+# Author:        Declan Murray
+# Created:       16 April 2023
 # Acknowledgement:  adapted from an example by Marge Coahran
 #----------------------------------------------------------------------------
 # Use the clang compiler

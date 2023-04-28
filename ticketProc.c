@@ -1,4 +1,26 @@
-// #include "ticket.h"
+    /***********************************************************************
+     * Declan Murray and John Miller                                       *
+     * Assignment name (Project  4 ticketmaster)                           *
+     *                                                                     *
+     * Assignment for <4/28/2022>                                          *
+     ***********************************************************************/
+
+    /* *********************************************************************
+     * Academic honesty certification:                                     *
+     *   Written/online sources used: none                                 *
+     *      textbook(s)                                                    *
+     *      CSC 161 labs and readings;                                     *
+     *                                                                     *
+     *   Help obtained                                                     *
+     *     None                                                            *
+     *   Our signature(s) below confirms that the above list of sources *
+     *   is complete AND that I/we have not talked to anyone else          *
+     *   (e.g., CSC 161 students) about the solution to this problem       *
+     *                                                                     *
+     *   Signature:John Miller and Declan Murray                           *
+     ***********************************************************************/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,11 +38,7 @@ void completedtix(ticket_t **assignedtixPtr, ticket_t **completedtixPtr){
     ticket_t *assignedtix = (*assignedtixPtr);
     ticket_t *completedtix = (*completedtixPtr);
 
-    // ticket_t *completedtixcopy = (ticket_t *)malloc(sizeof(ticket_t *));
-    // completedtixcopy = completedtix;
-
     int num;
-    // int *intPtr = malloc(sizeof(int) * 1);
     printf("what is the ticket that is complete? ");
     scanf("%d", &num);
     printf("Now looking for ticket %d\n", num);
@@ -126,8 +144,7 @@ ticket_t *makenewtix(ticket_t *newlist, int ticNum){
         // not head of list
         newlisthead = newlist;
         curr = newlist;
-        while ((*curr).next != NULL) // loop to find the last ticket
-        {
+        while ((*curr).next != NULL){ // loop to find the last ticket
             curr = (*curr).next;
         }
         (*curr).next = newTicket; // the ticket is set as the last thing in the list
@@ -149,7 +166,6 @@ ticket_t *makenewtix(ticket_t *newlist, int ticNum){
 /* prompts the user for their input, and returns their input integer.
 pre and postconditions: none*/
 int printchoicemenu(void){
-
     int *choiceptr = (int *)malloc(sizeof(int) * 1);
     printf("\nThis procedure takes a number 1 - 7 corresponding to an action with our tickets\n");
     printf("\t1: create a new ticket\n");
@@ -166,9 +182,7 @@ int printchoicemenu(void){
 /*this function takes the pointer to the head of a list, and prints it out, from beginning to end
 preconditions: none
 postconditiions: none*/
-void printList(ticket_t *list)
-{
-    // printf("now printing the list\n");
+void printList(ticket_t *list){
     while (list != NULL){
         printf("Ticket Number:   %d\n", (*list).ticketnum);
         printf("\tCompany:          \t%s\n", (*list).companyident);

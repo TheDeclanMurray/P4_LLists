@@ -1,0 +1,61 @@
+    /***********************************************************************
+     * Declan Murray and John Miller                                       *
+     * Assignment name (Project  4 ticketmaster)                           *
+     *                                                                     *
+     * Assignment for <4/28/2022>                                          *
+     ***********************************************************************/
+
+    /* *********************************************************************
+     * Academic honesty certification:                                     *
+     *   Written/online sources used: none                                 *
+     *      textbook(s)                                                    *
+     *      CSC 161 labs and readings;                                     *
+     *                                                                     *
+     *   Help obtained                                                     *
+     *     None                                                            *
+     *   Our signature(s) below confirms that the above list of sources *
+     *   is complete AND that I/we have not talked to anyone else          *
+     *   (e.g., CSC 161 students) about the solution to this problem       *
+     *                                                                     *
+     *   Signature:John Miller and Declan Murray                           *
+     ***********************************************************************/
+
+
+Our ticket program has the goal of working as perscribed in the lad details, and
+should be able to handle erroneous input as perscribed. here are a few objectives
+that our collective programs should accomplish:
+
+[Check] run until the user puts in 7 to terminate the program
+[check] handle ticket creation, assignments, and completion properly.
+[check] appropriately print messages to the user about the status of
+where they are in the ticket process.
+[check] prints proper errors if the user tries to access tickets that dont exist,
+[check] tries to improperly use the ticket system.
+
+
+Here are some objectives of our makefile:
+
+
+[check] compile properly based on the commands.
+[check] handle improper commands properly with error printing.
+
+Handle repeated keyboard inputs
+End loop on ‘7’ as the input
+‘1’ opens a menu to add a ticket
+Prompt a description of the issue (no spaces)
+Prompt a company classification
+Handle if empty and non empty ticket list
+‘2’ opens a menu to assign a ticket
+Prompts a technician name (no spaces)
+Moves the first ticket in newTickets to assigned
+Empty and non-empty and one item newTicket list
+Empty and non-empty assigned list
+‘3’ opens a menu to complete a ticket
+Prompts asking for the ticket number
+Finds the correct ticket if ticket is in Assigned list, prints error if not in list
+Moves the ticket from Assigned to Completed list
+Empty and non-empty and one item assigned list
+Empty and non-empty completed list
+
+‘4 - 6’ print  the corresponding list with the next ticket which was just put in
+‘7’ ends the program with a goodbye message
